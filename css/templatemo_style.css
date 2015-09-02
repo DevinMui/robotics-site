@@ -14,9 +14,9 @@ ul { margin: 0; }
 
 .col { min-height: 100%; }
 /* little hack works ish */
-section { height: 100%;}
-section div { min-height: 100% }
 .col { height: 100%; }
+section { height: 100%; }
+section div { min-height: 100% }
 section { padding-top: 85px; margin-top: -50px; }
 section .outer_container { margin-bottom: 50px; background-color: #eeeeee;  }
 section .row { margin-left: 0; margin-right: 0; overflow: hidden; }
