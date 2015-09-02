@@ -20,6 +20,9 @@ ul { margin: 0; }
   background: url('../images/robotic-arms.gif') center center no-repeat #12ADE6; 
   z-index: 10000;
 }
+.back {
+	padding: 20px;
+}
 
 section { padding-top: 85px; margin-top: -50px; }
 section .outer_container { margin-bottom: 50px; background-color: #eeeeee;  }
@@ -60,7 +63,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 	min-height: 100px;
 	height: 100px;
 }
-.navbar-nav li {
+.navbar-nav li a {
 	-moz-transition: background-color .5s ease;
 	-o-transition: background-color .5s ease;
 	-webkit-transition: background-color .5s ease;
@@ -208,7 +211,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 /*------------------------------------------------------
 	Blog Styles 
 --------------------------------------------------------*/
-.blog_post { position: relative; float: left; width: 50%; }
+.blog_post { position: relative; float: left; width: 50%; height: 300px; }
 .blog_posts_container { max-width: 620px; }
 .blog_post h2 { position: absolute; background: #a8f662; color: white; top: 0; right: 0; padding: 10px 20px; margin: 0; text-align: center; }
 

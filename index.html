@@ -23,7 +23,7 @@ http://www.templatemo.com/preview/templatemo_403_karma
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">  
     <link href="slider/flexslider.css" rel="stylesheet" type="text/css" media="screen" />
-     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
     <!--link href="css/templatemo_style.css" rel="stylesheet" type="text/css"-->
     <link href="css/style.css" rel="stylesheet" />
 
@@ -47,7 +47,7 @@ http://www.templatemo.com/preview/templatemo_403_karma
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">
+            <a href="#home" class="navbar-brand"><!-- prob change to home link-->
               <img src="images/logo2.png" alt="karma" height="70" width="300">
             </a>
           </div>
@@ -300,12 +300,22 @@ http://www.templatemo.com/preview/templatemo_403_karma
           <div class="col col-md-7 col-md-pull-5 col-sm-12">
             <div class="blog_posts_container">
               <div class="blog_post">
-                <h2>01<br>September</h2>
-                <img src="images/templatemo_image_05.jpg" alt="Blog Post 1" class="img-responsive">
+                <div class="front">
+                  <h2>01<br>September</h2>
+                  <img src="images/templatemo_image_05.jpg" alt="Blog Post 1" class="img-responsive">
+                </div>
+                <div class="back">
+                  <h2>First blog post</h2>
+                  <p>Foobar</p>
+                </div>
               </div>    
               <div class="blog_post">
-                <h2>08<br>September</h2>      
-                <img src="images/templatemo_image_06.jpg" alt="Blog Post 2" class="img-responsive">
+                <div class="front">
+                  <h2>08<br>September</h2>
+                  <img src="images/templatemo_image_06.jpg" alt="Blog Post 2" class="img-responsive">
+                </div>
+                <div class="back">
+                </div>
               </div>
             </div>          
           </div>              
@@ -389,6 +399,7 @@ http://www.templatemo.com/preview/templatemo_403_karma
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
   <script src="js/smooth.scrolling.js"></script>
+  <script src="js/jquery.flip.min.js"></script>
   <script type="text/javascript">
 
     $(window).load(function(){
@@ -400,7 +411,10 @@ http://www.templatemo.com/preview/templatemo_403_karma
         }
       });
     });
-
+    $('.blog_post').flip({
+      trigger: 'hover',
+      reverse: true
+    });
     $('#go-top').click(function(event) {
       event.preventDefault();
       jQuery('html, body').animate({scrollTop: 0}, 1000);
