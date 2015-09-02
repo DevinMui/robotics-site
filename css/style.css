@@ -13,7 +13,12 @@ h2 { font-size: 1.5em; }
 ul { margin: 0; }
 
 .se-pre-con {
-  position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background: url('../images/robotic-arms.gif') #12ADE6 no-repeat center center; z-index: 10000;
+  position: fixed; 
+  width: 100%; 
+  height: 100%; 
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('../images/robotic-arms.gif') center center no-repeat #12ADE6; 
+  z-index: 10000;
 }
 
 section { padding-top: 85px; margin-top: -50px; }
@@ -55,7 +60,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 	min-height: 100px;
 	height: 100px;
 }
-.navbar-nav > li {
+.navbar-nav li {
 	-moz-transition: background-color .5s ease;
 	-o-transition: background-color .5s ease;
 	-webkit-transition: background-color .5s ease;
@@ -113,7 +118,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 --------------------------------------------------------*/
 #team .col-md-4 { padding: 5px; }
 #team img { margin: 0 auto; margin-bottom: 10px; }
-.main-col { height: 100%; background-color: #498fc0; }
+#team h1 { height: 100%; background-color: #498fc0; }
 #team p { text-align: center; }
 #team_content { height: 280px; }
 
