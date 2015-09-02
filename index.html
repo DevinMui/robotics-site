@@ -4,27 +4,37 @@
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> 
   <![endif]-->
   <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-  <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <!--[if gt IE 8]><!--> 
+  <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
     <title>Gael Force</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
+<!-- 
+Karma Template 
+http://www.templatemo.com/preview/templatemo_403_karma 
+-->
     <meta name="author" content="templatemo">
     <meta charset="UTF-8">
 
     <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
 
+    <!-- CSS Bootstrap & Custom -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">  
     <link href="slider/flexslider.css" rel="stylesheet" type="text/css" media="screen" />
      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
-    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+    <!--link href="css/templatemo_style.css" rel="stylesheet" type="text/css"-->
+    <link href="css/style.css" rel="stylesheet" />
 
+    <!-- Modernizr -->
     <script src="slider/modernizr.js"></script>
+
 </head>
 <body>
-<div class="se-pre-con"></div>
-  <!-- navbar -->
+  <!-- loading icon -->
+  <div class="se-pre-con"></div>
+
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">    
     <div class="container">
       <div class="row">
@@ -40,7 +50,6 @@
             <a href="#" class="navbar-brand"><img src="images/logo2.png" alt="karma" height="70" width="300"></a>
           </div>
         </div>        
-        
         <div class="col-md-10 col-sm-10 col-xs-12">
           <div class="navbar-collapse collapse menu">          
             <ul class="nav navbar-nav navbar-right">
@@ -57,8 +66,7 @@
     </div>
   </nav>
 
-  <!-- content -->
-  <div class="container" id="home" style="height: 100%;">
+  <div class="container" id="home">
     <div class="row">
       <div class="col col-md-12">        
         <div class="flexslider">
@@ -84,7 +92,7 @@
     <div class="outer_container">
       <div class="container">
         <div class="row">
-          <div class="main-col col col-md-5 col-sm-12"><h1>About us</h1></div>
+          <div class="col col-md-5 col-sm-12"><h1>About us</h1></div>
           <div class="col col-md-7 col-sm-12 center-row" id="about_content">
             <div class="row center">
               <div class="col col-md-4 col-sm-12 templatemo_ceo">
@@ -92,12 +100,7 @@
                 <p>Ms. Chou, Club Advisor</p>
               </div>
               <div class="col col-md-8 col-sm-12">
-              	<p>
-                  We are an experienced and completely student-run high school club whose members work on both real life engineering projects and participate in the VEX Robotics Competition. 
-                </p> 
-                <p>
-                  Around 6 years old now, our club takes pride in its members’ teamwork and problem solving skills. We also heavily emphasize the engineering design process and ensure that all members have knowledge of such engineering aspects through our yearly seminars.
-                </p>
+              	<p>We are an experienced and completely student-run high school club whose members work on both real life engineering projects and participate in the VEX Robotics Competition. </p> <p>Around 6 years old now, our club takes pride in its members’ teamwork and problem solving skills. We also heavily emphasize the engineering design process and ensure that all members have knowledge of such engineering aspects through our yearly seminars.</p>
               </div>
             </div>
           </div>
@@ -105,11 +108,11 @@
       </div>
     </div>
   </section>
-  <section id="team" style="height: 100%;">
-    <div class="outer_container" style="height: 100%">
-      <div class="container" style="height: 100%">
-        <div class="row" style="height: 100%;">
-          <div class="main-col col col-md-5 col-md-push-7 col-sm-12" style="height: 100%"><h1>Our Team</h1></div>
+  <section id="team">
+    <div class="outer_container">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-5 col-md-push-7 col-sm-12"><h1>Our Team</h1></div>
           <div class="col col-md-7 col-md-pull-5 col-sm-12 center-row" id="team_content">
             <div class="row center">
               <div class="col col-md-4 col-sm-4 col-xs-4">
@@ -142,7 +145,7 @@
                 <p>Jaimie Jin</p>
                 <p>Room Director</p>
               </div>   
-            </div>       
+            </div>        
           </div>        
         </div>
       </div>
@@ -401,14 +404,17 @@
       jQuery('html, body').animate({scrollTop: 0}, 1000);
       return false;
     });
-
- 
-//paste this code under head tag or in a seperate js file.
-  // Wait for window load
-  $(window).load(function() {
-    // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");;
-  });
+    //paste this code under head tag or in a seperate js file.
+    // Wait for window load
+    $(window).load(function() {
+      // Animate loader off screen
+      // idk set the time out so it looks like its loading something
+      // when its really not
+      setTimeout(function(){
+        $(".se-pre-con").fadeOut("slow");
+      }, 2500);
+    });
   </script>
+  <!-- templatemo 403 karma -->
 </body>
 </html>

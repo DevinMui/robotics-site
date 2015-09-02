@@ -1,8 +1,14 @@
+/* 
+Karma Template 
+http://www.templatemo.com/preview/templatemo_403_karma 
+*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	GENERAL
+/*-----------------------------------------------------------------------------------*/
 html { font-size: 1em; }
 
-html, body { height: 100%; }
-
-body { font-family: "Lato"; overflow-x: hidden; }
+body { font-family: "Lato"; overflow-x: hidden; } /*carasmo's comment to hide horizontal scroll bar https://github.com/twbs/bootstrap/issues/10711*/
 
 h1, h2, p { font-family: "Lato", sans-serif; }
 
@@ -12,12 +18,11 @@ h2 { font-size: 1.5em; }
 
 ul { margin: 0; }
 
-.col { min-height: 100%; }
-/* little hack works ish */
-.col { height: 100%; }
-section { height: 100%; }
-section div { min-height: 100% }
-section { padding-top: 85px; margin-top: -50px; }
+.se-pre-con {
+  position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background: url('../images/robotic-arms.gif') #12ADE6 no-repeat center center; z-index: 10000;
+}
+
+section { padding-top: 85px; margin-top: -85px; }
 section .outer_container { margin-bottom: 50px; background-color: #eeeeee;  }
 section .row { margin-left: 0; margin-right: 0; overflow: hidden; }
 section h1 { text-transform: uppercase; color: white; margin-top: 0px; margin-bottom: 0px; line-height: 280px; text-align: center; }
@@ -39,9 +44,9 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 
 .navbar {
 	background: #283147;
-	min-height: 85px;	
-	border-radius: 0px; 
-	border: none; 
+	min-height: 100px;	
+	border-radius: 0px;
+	border: none;
 	margin-bottom: 0px; 
 	-webkit-box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15);
 	-moz-box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15);
@@ -62,7 +67,10 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 	-webkit-transition: background-color .5s ease;
 	transition: background-color .5s ease;
 }
-
+.navbar-default, .navbar-nav, .navbar-nav > li {
+	min-height: 100px;
+	height: 100px;
+}
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
 	color: white;
 	background-color: #498FC0;
@@ -71,7 +79,9 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 .navbar>.container .navbar-brand { margin-left: 0; }
 .navbar-collapse .navbar-nav.navbar-right:last-child { margin-right: 0; }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #498FC0; }
-
+.menu {
+	background-color: #498FC0;
+}
 /*------------------------------------------------------
 	FLEXSLIDER OVERRIDING 
 --------------------------------------------------------*/
@@ -103,7 +113,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 --------------------------------------------------------*/
 #team .col-md-4 { padding: 5px; }
 #team img { margin: 0 auto; margin-bottom: 10px; }
-.main-col { height: 100%; background-color: #498fc0; }
+#team h1 { background-color: #498fc0; }
 #team p { text-align: center; }
 #team_content { height: 280px; }
 
@@ -260,7 +270,9 @@ footer .row { height: 100%; }
 	background-color: rgb( 180, 52, 107 );
 	box-shadow: 0px 3px 0px 0px rgb( 226, 90, 148 );
 }
-
+/* URGENT: Tablet view is screwed up 
+	 Need to implement new media query just for the navbar in tablet view
+*/
 /*------------------------------------------------------
 	MEDIA QUERIES 
 --------------------------------------------------------*/
@@ -276,6 +288,10 @@ footer .row { height: 100%; }
 	#skills .col-md-7 { padding-right: 90px; }
 	#portfolio .col-md-7 { padding-left: 46px; }
 	#contact .col-md-7 { padding-left: 50px; }	
+	
+	.navbar-default, .navbar-nav, .navbar-nav > li, .navbar-nav > li > a {
+		min-height: 20px;
+	}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -290,6 +306,10 @@ footer .row { height: 100%; }
 	#skills .col-md-7 { padding-right: 30px; }
 	#portfolio .col-md-7 { padding-left: 30px; }
 	#contact .col-md-7 { padding-left: 30px; }
+	
+	.navbar-default, .navbar-nav, .navbar-nav > li, .navbar-nav > li > a {
+		min-height: 20px;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -306,6 +326,10 @@ footer .row { height: 100%; }
 	#portfolio p { padding: 7.3% 4%; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7  { padding-left: 0; padding-top: 20px; }	
 	#blog .col-md-7 { padding-right: 0; }
+	
+	.navbar-default, .navbar-nav, .navbar-nav > li, .navbar-nav > li > a {
+		min-height: 20px;
+	}
 }
 
 @media only screen and (max-width: 767px) and (min-width: 481px) {
@@ -325,6 +349,10 @@ footer .row { height: 100%; }
 	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }
 	#services_tabs { padding-left: 10px; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 20px; padding-left: 0; }	
+	
+	.navbar-default, .navbar-nav, .navbar-nav > li, .navbar-nav > li > a {
+		min-height: 20px;
+	}
 }
 
 @media only screen and (max-width: 480px) {	
@@ -348,6 +376,9 @@ footer .row { height: 100%; }
 	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }	
 	#services_tabs { padding-left: 0; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 10px; padding-left: 0; }	
+	.navbar-default, .navbar-nav, .navbar-nav > li, .navbar-nav > li > a {
+		min-height: 20px;
+	}
 }
 
 @media only screen and (max-width: 430px) {
@@ -364,6 +395,9 @@ footer .row { height: 100%; }
 		height: 100%;
 	}
 	#services_tabs { padding-left: 0; }
+	.navbar-default, .navbar-nav, .navbar-nav > li, .navbar-nav > li > a {
+		min-height: 20px;
+	}
 }
 
 /* http://codepen.io/minimalmonkey/pen/Ecpla */
