@@ -51,6 +51,10 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
+.navbar-nav {
+	min-height: 100px;
+	height: 100px;
+}
 .navbar-nav > li {
 	-moz-transition: background-color .5s ease;
 	-o-transition: background-color .5s ease;
@@ -60,12 +64,14 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 	height: 100px;
 }
 .navbar-default .navbar-nav>li>a {
+	-moz-transition: background-color .5s ease;
+	-o-transition: background-color .5s ease;
+	-webkit-transition: background-color .5s ease;
+	transition: background-color .5s ease;
+	height: 100%;
 	padding-bottom: 20px;
 	color: white;
 	text-transform: uppercase;
-}
-.navbar-nav > li:hover {
-	background-color: #498FC0;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
 	color: white;
