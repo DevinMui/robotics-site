@@ -61,7 +61,6 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 }
 .navbar-nav {
 	min-height: 100px;
-	height: 100px;
 }
 .navbar-nav li a {
 	-moz-transition: background-color .5s ease;
@@ -167,10 +166,9 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 --------------------------------------------------------*/
 .progress { background-color: black; border-radius: 0px; }
 .progress.vertical:last-of-type { margin-right: 0; }
-.progress-bar {	position:absolute; bottom:0; left:0; } /*http://stackoverflow.com/questions/2015032/align-divs-to-bottom-or-baseline*/
+.progress-bar {	position:absolute; bottom:0; left:0; }
 .progress-label { position:absolute; width: 100%; bottom:0; }
 
-/*http://stackoverflow.com/questions/16318375/how-to-align-vertically-a-progress-bar-in-twitter-bootstrap*/
 .progress.vertical {
     position: relative;
     width: 19%;
@@ -233,13 +231,9 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 #contact h1 { background-color: #498FC0; }
 #contact_content { height: 280px; }
 
-/*------------------------------------------------------
-	Map Styles 
---------------------------------------------------------*/
 #map h1 { background-color: #e25a94; }
 
 #google_map { width: 100%; height: 280px; outline: 0; border: 0; }
-
 /*------------------------------------------------------
 	FOOTER 
 --------------------------------------------------------*/
@@ -294,8 +288,7 @@ footer .row { height: 100%; }
 	#skills .col-md-7 { padding-right: 90px; }
 	#portfolio .col-md-7 { padding-left: 46px; }
 	#contact .col-md-7 { padding-left: 50px; }	
-	.navbar-nav > li {
-		min-height: 50px;
+	.navbar-nav > li, .navbar-nav li a {
 		height: 50px;
 	}
 }
@@ -312,8 +305,7 @@ footer .row { height: 100%; }
 	#skills .col-md-7 { padding-right: 30px; }
 	#portfolio .col-md-7 { padding-left: 30px; }
 	#contact .col-md-7 { padding-left: 30px; }
-	.navbar-nav > li {
-		min-height: 50px;
+	.navbar-nav > li, .navbar-nav li a {
 		height: 50px;
 	}
 }
@@ -324,7 +316,7 @@ footer .row { height: 100%; }
 	.btn-primary { font-size: 1.6em; }
 	.services_buttons { text-align: left; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
-		height: 85px;
+		height: 50px;
 	}
 	#about .col-md-8 { padding-left: 0; padding-bottom: 20px; }
 	#about img { padding: 0; margin-top: 20px; margin-bottom: 20px;	}
@@ -332,8 +324,7 @@ footer .row { height: 100%; }
 	#portfolio p { padding: 7.3% 4%; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7  { padding-left: 0; padding-top: 20px; }	
 	#blog .col-md-7 { padding-right: 0; }
-	.navbar-nav > li {
-		min-height: 50px;
+	.navbar-nav > li, .navbar-nav li a {
 		height: 50px;
 	}
 }
@@ -355,8 +346,7 @@ footer .row { height: 100%; }
 	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }
 	#services_tabs { padding-left: 10px; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 20px; padding-left: 0; }	
-	.navbar-nav > li {
-		min-height: 50px;
+	.navbar-nav > li, .navbar-nav li a {
 		height: 50px;
 	}
 }
@@ -382,8 +372,7 @@ footer .row { height: 100%; }
 	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }	
 	#services_tabs { padding-left: 0; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 10px; padding-left: 0; }	
-	.navbar-nav > li {
-		min-height: 50px;
+	.navbar-nav > li, .navbar-nav li a {
 		height: 50px;
 	}
 }
@@ -403,8 +392,7 @@ footer .row { height: 100%; }
 	}
 	#services_tabs { padding-left: 0; }
 
-	.navbar-nav > li {
-		min-height: 50px;
+	.navbar-nav > li, .navbar-nav li a {
 		height: 50px;
 	}
 }
