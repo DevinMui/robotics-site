@@ -23,7 +23,7 @@ function change_panels(new_index){
 window.onload = function() {
   var elevator = new Elevator({
     element: document.querySelector('.elevator-button'),
-    mainAudio: 'images/image/foobar.mp3',
+    mainAudio: 'images/image/elevator.mp3',
     endAudio: 'images/image/ding.mp3',
     duration: 15000
   });
