@@ -201,7 +201,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 
 #portfolio .col-md-4 { max-width: 206px; }
 #portfolio .row { margin: 0; }
-#portfolio h1 { background-color: #00c8c8; }
+#portfolio h1 { background-color: #498FC0; }
 #portfolio h2 { color: white; padding: 8% 4% 4% 4%; margin: 0; }
 #portfolio p { color: white; padding: 0 4% 4% 4%; margin: 0; font-size: .9em; }
 #portfolio_content .col-md-4 { padding: 0; }
@@ -211,10 +211,10 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 --------------------------------------------------------*/
 .blog_post { position: relative; float: left; width: 50%; height: 300px; }
 .blog_posts_container { max-width: 620px; }
-.blog_post h2 { position: absolute; background: #a8f662; color: white; top: 0; right: 0; padding: 10px 20px; margin: 0; text-align: center; }
+.blog_post h2 { position: absolute; background: #FF0000; color: white; top: 0; right: 0; padding: 10px 20px; margin: 0; text-align: center; }
 
 #blog .col-md-7 { padding-right: 46px; overflow: hidden; }
-#blog h1 { background-color: #a8f662; }
+#blog h1 { background-color: #498FC0; }
 
 /*------------------------------------------------------
 	Contact Styles 
@@ -231,7 +231,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 #contact h1 { background-color: #498FC0; }
 #contact_content { height: 280px; }
 
-#map h1 { background-color: #e25a94; }
+#map h1 { background-color: #498FC0; }
 
 #google_map { width: 100%; height: 280px; outline: 0; border: 0; }
 /*------------------------------------------------------
@@ -257,7 +257,7 @@ footer .row { height: 100%; }
 .btn-primary {
 	font-size: 2em;
 	padding-bottom: 10px;
-  	background-color: rgb( 226, 90, 148 );
+  	background-color: #FF0000;
   	box-shadow: 0px 3px 0px 0px rgb( 180, 52, 107 );
   	width: 160px;
   	height: 55px;
@@ -269,8 +269,8 @@ footer .row { height: 100%; }
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-	background-color: rgb( 180, 52, 107 );
-	box-shadow: 0px 3px 0px 0px rgb( 226, 90, 148 );
+	background-color: #CC1414;
+	/*box-shadow: 0px 3px 0px 0px rgb( 226, 90, 148 );*/
 }
 
 /*------------------------------------------------------
@@ -430,8 +430,12 @@ footer .row { height: 100%; }
 	z-index: 10;
 }
 
-.icon-button:hover .fa-twitter,
-.icon-button:hover .fa-facebook,
+.icon-button:hover .fa-twitter {
+	color: #2AA9E0;
+}
+.icon-button:hover .fa-facebook {
+	color: #576FAA;
+}
 .icon-button:hover .fa-youtube {
 	color: #c5454a;
 }

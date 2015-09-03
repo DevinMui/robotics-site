@@ -318,6 +318,18 @@
       </div>
     </div>
   </section>
+  <section id="map">
+    <div class="outer_container">
+      <div class="container">
+        <div class="row">
+          <h1>Calendar</h1></div>
+            <!-- need back end script to call calendar api for better style -->
+            <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5itjnftruqni0lim522pp95ajg%40group.calendar.google.com&amp;color=%23853104&amp;src=5s89dmbo2frllsj96d2gqakjts%40group.calendar.google.com&amp;color=%2342104A&amp;src=team5327d%40gmail.com&amp;color=%2328754E&amp;src=0t72do02u19ab4qp80garuhgj4%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1140" height="600" frameborder="0" scrolling="no"></iframe>
+          </div>              
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="contact">
     <div class="outer_container">
       <div class="container">
@@ -351,18 +363,6 @@
       </div>
     </div>
   </section>
-  <section id="map">
-    <div class="outer_container">
-      <div class="container">
-        <div class="row">
-          <h1>Calendar</h1></div>
-            <!-- need back end script to call calendar api for better style -->
-            <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5itjnftruqni0lim522pp95ajg%40group.calendar.google.com&amp;color=%23853104&amp;src=5s89dmbo2frllsj96d2gqakjts%40group.calendar.google.com&amp;color=%2342104A&amp;src=team5327d%40gmail.com&amp;color=%2328754E&amp;src=0t72do02u19ab4qp80garuhgj4%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1140" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>              
-        </div>
-      </div>
-    </div>
-  </section>
   <footer>
     <div class="container">        
       <div class="row">
@@ -379,7 +379,7 @@
               <a href="#" rel="nofollow" class="icon-button twitter"><i class="fa fa-twitter"></i></a>             
               <a href="#" rel="nofollow" class="icon-button youtube"><i class="fa fa-youtube"></i></a>
             </div>
-            <a href="#" id="go-top"><div class="back_to_top">Back To Top</div></a>
+            <a href="#" id="go-top"><div class="back_to_top elevator-button">Back To Top</div></a>
           </div>            
         </div>
       </div> 
@@ -394,6 +394,7 @@
   <script defer src="slider/jquery.flexslider.js"></script>
   <script src="js/smooth.scrolling.js"></script>
   <script src="js/jquery.flip.min.js"></script>
+  <script src="js/elevator.min.js"></script>
   <script type="text/javascript">
 
     $(window).load(function(){
@@ -424,6 +425,14 @@
         $(".se-pre-con").fadeOut("slow");
       }, 2500);
     });
+    window.onload = function() {
+      var elevator = new Elevator({
+        element: document.querySelector('.elevator-button'),
+        mainAudio: 'music/elevator.mp3',
+        endAudio: 'music/ding.mp3',
+        duration: 15000
+      });
+    }
   </script>
   <!-- templatemo 403 karma -->
 </body>
