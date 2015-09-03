@@ -2,7 +2,7 @@ html { font-size: 1em; }
 
 html, body { height: 100%; }
 
-body { font-family: "Lato"; overflow-x: hidden; }
+body { font-family: "Lato"; overflow-x: hidden; background-color: #EEEEEE; }
 
 h1, h2, p { font-family: "Lato", sans-serif; }
 
