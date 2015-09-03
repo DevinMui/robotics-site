@@ -12,11 +12,19 @@ $(document).ready(function(){
 });
 
 function change_panels(new_index){
-	var arrow_positions = [ 20, 110, 205 ];
+	var arrow_positions = [ 20, 110, 205, 300 ];
 	var new_top = arrow_positions[new_index] + 'px';
 
 	$('.arrow-left').animate({marginTop:new_top}, 500);
 	$('#services_tabs li:nth-child('+(new_index+1)+')').tab('show');
 	$('.services_buttons li').removeClass('active');
 	$('.services_buttons li:nth-child('+(new_index+1)+')').addClass('active');
+}
+window.onload = function() {
+  var elevator = new Elevator({
+    element: document.querySelector('.elevator-button'),
+    mainAudio: 'images/image/foobar.mp3',
+    endAudio: 'images/image/ding.mp3',
+    duration: 15000
+  });
 }
