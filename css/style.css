@@ -45,7 +45,7 @@ nav { font-size: 1.2em; font-weight: lighter; }
 nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 
 .navbar {
-	background: #283147;
+	background: #004877;
 	min-height: 100px;	
 	border-radius: 0px; 
 	border: none; 
@@ -82,7 +82,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
 	color: white;
-	background-color: #498FC0;
+	background-color: #C32C38;
 }
 
 .navbar>.container .navbar-brand { margin-left: 0; }
@@ -237,7 +237,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 /*------------------------------------------------------
 	FOOTER 
 --------------------------------------------------------*/
-footer { background: #c5454a; min-height: 141px; color: white; margin-top: 20px; }
+footer { background: #C5454A; min-height: 141px; color: white; margin-top: 20px; }
 footer img { padding-top: 30px; }
 footer a { text-decoration: none; color: white; }
 footer a:hover { color: #cbcbcb; text-decoration: none; }
