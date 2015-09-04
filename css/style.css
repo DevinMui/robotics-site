@@ -319,8 +319,9 @@ footer .row { height: 100%; }
 	.btn-primary { font-size: 1.6em; }
 	.services_buttons { text-align: left; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
-		height: 50px;
+		height: 100%;
 	}
+	/* weird issue with width here */
 	#about .col-md-8 { padding-left: 0; padding-bottom: 20px; }
 	#about img { padding: 0; margin-top: 20px; margin-bottom: 20px;	}
 	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }
@@ -328,8 +329,8 @@ footer .row { height: 100%; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7  { padding-left: 0; padding-top: 20px; }	
 	#blog .col-md-7 { padding-right: 0; }
 	.navbar-nav > li, .navbar-nav li a {
-		min-height: 50px;
-		height: 50px;
+		min-height: 100px;
+		height: 100px;
 	}
 }
 
@@ -401,6 +402,11 @@ footer .row { height: 100%; }
 	.navbar-nav > li, .navbar-nav li a {
 		min-height: 50px;
 		height: 50px;
+	}
+}
+@media only screen and (max-width: 418px) {
+	.navbar-brand img {
+		width: 95%;
 	}
 }
 
