@@ -289,6 +289,7 @@ footer .row { height: 100%; }
 	#portfolio .col-md-7 { padding-left: 46px; }
 	#contact .col-md-7 { padding-left: 50px; }	
 	.navbar-nav > li, .navbar-nav li a {
+		min-height: 50px;
 		height: 50px;
 	}
 }
@@ -306,6 +307,7 @@ footer .row { height: 100%; }
 	#portfolio .col-md-7 { padding-left: 30px; }
 	#contact .col-md-7 { padding-left: 30px; }
 	.navbar-nav > li, .navbar-nav li a {
+		min-height: 50px;
 		height: 50px;
 	}
 }
@@ -325,6 +327,7 @@ footer .row { height: 100%; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7  { padding-left: 0; padding-top: 20px; }	
 	#blog .col-md-7 { padding-right: 0; }
 	.navbar-nav > li, .navbar-nav li a {
+		min-height: 50px;
 		height: 50px;
 	}
 }
@@ -347,6 +350,7 @@ footer .row { height: 100%; }
 	#services_tabs { padding-left: 10px; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 20px; padding-left: 0; }	
 	.navbar-nav > li, .navbar-nav li a {
+		min-height: 50px;
 		height: 50px;
 	}
 }
@@ -373,6 +377,7 @@ footer .row { height: 100%; }
 	#services_tabs { padding-left: 0; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 10px; padding-left: 0; }	
 	.navbar-nav > li, .navbar-nav li a {
+		min-height: 50px;
 		height: 50px;
 	}
 }
@@ -393,6 +398,7 @@ footer .row { height: 100%; }
 	#services_tabs { padding-left: 0; }
 
 	.navbar-nav > li, .navbar-nav li a {
+		min-height: 50px;
 		height: 50px;
 	}
 }
