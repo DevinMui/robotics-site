@@ -133,7 +133,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 --------------------------------------------------------*/
 .services_buttons .icon-button:last-of-type { margin-bottom: 0; }
 .services_buttons .icon-button {
-	font-size: 350%;
+	font-size: 250%;
 	color: white;
 	background-color: red;
 	cursor: pointer;
@@ -160,7 +160,11 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 #services_content { height: 280px; }
 #services_content .tab-pane {  padding: 15px; }
 #services_content a { color: #FFFFFF; }
-
+/* weird responsiveness issue here 
+.services_tabs li {
+	height: 70px;
+}
+*/
 /*http://cssarrowplease.com/*/
 .arrow-box { position: relative; color: white; background-color: #498FC0; border-radius: 4px; margin-left: 30px; height: 100%;}
 .arrow-left { display: block; width: 30px; height: 58px; background: url(../images/left_arrow.png) no-repeat 0 0; position: absolute; left: 1px; margin-top: 20px; }
