@@ -497,10 +497,12 @@ footer .row { height: 100%; }
 }
 
 .icon-button:hover .fa-twitter {
-	color: #2AA9E0;
+	/*color: #2AA9E0;*/
+	color: #c5454a;
 }
 .icon-button:hover .fa-facebook {
-	color: #576FAA;
+	/*color: #576FAA;*/
+	color: #c5454a;
 }
 .icon-button:hover .fa-youtube {
 	color: #c5454a;
