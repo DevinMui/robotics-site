@@ -12,7 +12,7 @@ $(document).ready(function(){
 });
 
 function change_panels(new_index){
-	var arrow_positions = [ 20, 110, 205, 300 ];
+	var arrow_positions = [ 20, 80, 150, 220 ];
 	var new_top = arrow_positions[new_index] + 'px';
 
 	$('.arrow-left').animate({marginTop:new_top}, 500);
