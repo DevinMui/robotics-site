@@ -60,6 +60,9 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
+.navbar-brand img {
+	height: 70px;
+}
 .navbar-nav {
 	min-height: 100px;
 }
