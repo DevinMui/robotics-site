@@ -223,6 +223,10 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 
 #blog .col-md-7 { padding-right: 46px; overflow: hidden; }
 #blog h1 { background-color: #498FC0; }
+.front {
+	background-color: #94DBFF;
+}
+
 /*------------------------------------------------------
 	Contact Styles 
 --------------------------------------------------------*/
