@@ -2,7 +2,7 @@ html { font-size: 1em; }
 
 html, body { height: 100%; }
 
-body { font-family: "Lato"; overflow-x: hidden; background-color: #EEEEEE; }
+body { font-family: "Lato"; overflow-x: hidden; background-color: #EEEEEE; padding-top: 100px; }
 
 h1, h2, p { font-family: "Lato", sans-serif; }
 
@@ -13,12 +13,12 @@ h2 { font-size: 1.5em; }
 ul { margin: 0; }
 
 .se-pre-con {
-  position: fixed; 
-  width: 100%; 
-  height: 100%; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
   top: 0; left: 0; right: 0; bottom: 0;
   background: url('../images/robotic-arms.gif') center center no-repeat #12ADE6;
-  background-size: 60% 80%;  
+  background-size: 60% 80%;
   z-index: 10000;
 }
 .back {
@@ -40,17 +40,17 @@ section h1 { text-transform: uppercase; color: white; margin-top: 0px; margin-bo
 .center-row .center { display: table-cell; vertical-align: middle; }
 
 /*------------------------------------------------------
-	NAVIGATION 
+	NAVIGATION
 --------------------------------------------------------*/
 nav { font-size: 1.2em; font-weight: lighter; }
 nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 
 .navbar {
 	background: #004877;
-	min-height: 100px;	
-	border-radius: 0px; 
-	border: none; 
-	margin-bottom: 0px; 
+	min-height: 100px;
+	border-radius: 0px;
+	border: none;
+	margin-bottom: 0px;
 	-webkit-box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15);
 	-moz-box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15);
 	box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15);
@@ -94,7 +94,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #498FC0; }
 
 /*------------------------------------------------------
-	FLEXSLIDER OVERRIDING 
+	FLEXSLIDER OVERRIDING
 --------------------------------------------------------*/
 .flexslider { padding-top: 85px; }
 .flexslider a:hover, .flexslider a:focus { text-decoration: none; }
@@ -106,14 +106,14 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
     right:0;
     bottom:0;
     color: white;
-    background:rgba(197,82,87,.8);   
+    background:rgba(197,82,87,.8);
     z-index:1;
     padding: 20px;
     margin: 0;
 }
 
 /*------------------------------------------------------
-	About Us Styles 
+	About Us Styles
 --------------------------------------------------------*/
 #about h1 { background-color: #498fc0; }
 #about img { padding: 0; }
@@ -129,7 +129,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 #team_content { height: 280px; }
 
 /*------------------------------------------------------
-	Services Styles 
+	Services Styles
 --------------------------------------------------------*/
 .services_buttons .icon-button:last-of-type { margin-bottom: 0; }
 .services_buttons .icon-button {
@@ -149,7 +149,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 	height: 100%;
 	max-width: 70px;
 	max-height: 70px;
-	line-height: 70px; 
+	line-height: 70px;
 }
 
 .services_buttons  .icon-button:hover, .services_buttons  .icon-button.active {	background-color: #498FC0; }
@@ -160,7 +160,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 #services_content { height: 280px; }
 #services_content .tab-pane {  padding: 15px; }
 #services_content a { color: #FFFFFF; }
-/* weird responsiveness issue here 
+/* weird responsiveness issue here
 .services_tabs li {
 	height: 70px;
 }
@@ -170,7 +170,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 .arrow-left { display: block; width: 30px; height: 58px; background: url(../images/left_arrow.png) no-repeat 0 0; position: absolute; left: 1px; margin-top: 20px; }
 
 /*------------------------------------------------------
-	Skills Styles 
+	Skills Styles
 --------------------------------------------------------*/
 .progress { background-color: black; border-radius: 0px; }
 .progress.vertical:last-of-type { margin-right: 0; }
@@ -180,7 +180,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 .progress.vertical {
     position: relative;
     width: 19%;
-	margin-right: 1.2%; 
+	margin-right: 1.2%;
     min-height: 240px;
     float: left;
     -webkit-box-shadow: none;
@@ -192,17 +192,17 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 #skills h1, .progress-bar { background-color: #498FC0; }
 
 /*------------------------------------------------------
-	Portfolio Styles 
+	Portfolio Styles
 --------------------------------------------------------*/
 .portfolio-item:hover .overlay-p { transition: all 0.3s ease-in-out 0s; visibility: visible; opacity: 1; }
 .portfolio-thumb .overlay-p {
  	background-color: rgba(0, 200, 200, 0.9);
- 	position: absolute; 
- 	visibility: hidden; 
- 	top: 0; 
- 	left: 0; 
- 	width: 100%; 
- 	height: 100%;  	
+ 	position: absolute;
+ 	visibility: hidden;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
  	opacity: 0;
  }
 .portfolio-thumb .overlay-p a { position: absolute; color: white; text-decoration: none; }
@@ -215,7 +215,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 #portfolio_content .col-md-4 { padding: 0; }
 
 /*------------------------------------------------------
-	Blog Styles 
+	Blog Styles
 --------------------------------------------------------*/
 .blog_post { position: relative; float: left; width: 50%; height: 300px; }
 .blog_posts_container { max-width: 620px; }
@@ -228,7 +228,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 }
 
 /*------------------------------------------------------
-	Contact Styles 
+	Contact Styles
 --------------------------------------------------------*/
 .form-group { margin-bottom: 20px; }
 .form-control {	border-radius: 0px; }
@@ -246,7 +246,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 
 #google_map { width: 100%; height: 280px; outline: 0; border: 0; }
 /*------------------------------------------------------
-	FOOTER 
+	FOOTER
 --------------------------------------------------------*/
 footer { background: #C5454A; min-height: 141px; color: white; margin-top: 20px; }
 footer img { padding-top: 30px; }
@@ -261,7 +261,7 @@ footer .row { height: 100%; }
 #templatemo_copyright { font-size: .9em; }
 
 /*------------------------------------------------------
-	BOOTSTRAP OVERRIDING 
+	BOOTSTRAP OVERRIDING
 --------------------------------------------------------*/
 .col-md-4, .col-md-5, .col-md-7, .col-md-8 { padding: 0; }
 
@@ -285,7 +285,7 @@ footer .row { height: 100%; }
 }
 
 /*------------------------------------------------------
-	MEDIA QUERIES 
+	MEDIA QUERIES
 --------------------------------------------------------*/
 @media only screen and (min-width: 1200px){
 	h1 { font-size: 4.5em; }
@@ -298,17 +298,17 @@ footer .row { height: 100%; }
 	#team .col-md-7 { padding-right: 50px; }
 	#skills .col-md-7 { padding-right: 90px; }
 	#portfolio .col-md-7 { padding-left: 46px; }
-	#contact .col-md-7 { padding-left: 50px; }	
+	#contact .col-md-7 { padding-left: 50px; }
 	.navbar-nav > li, .navbar-nav li a {
 		height: 50px;
 	}
 	.se-pre-con {
-	  position: fixed; 
-	  width: 100%; 
-	  height: 100%; 
+	  position: fixed;
+	  width: 100%;
+	  height: 100%;
 	  top: 0; left: 0; right: 0; bottom: 0;
 	  background: url('../images/robotic-arms.gif') center center no-repeat #12ADE6;
-	  background-size: 800px;  
+	  background-size: 800px;
 	  z-index: 10000;
 	}
 }
@@ -330,12 +330,12 @@ footer .row { height: 100%; }
 		height: 50px;
 	}
 	.se-pre-con {
-	  position: fixed; 
-	  width: 100%; 
-	  height: 100%; 
+	  position: fixed;
+	  width: 100%;
+	  height: 100%;
 	  top: 0; left: 0; right: 0; bottom: 0;
 	  background: url('../images/robotic-arms.gif') center center no-repeat #12ADE6;
-	  background-size: 992px;  
+	  background-size: 992px;
   	z-index: 10000;
 	}
 }
@@ -355,19 +355,19 @@ footer .row { height: 100%; }
 	#about img { padding: 0; margin-top: 20px; margin-bottom: 20px;	}
 	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }
 	#portfolio p { padding: 7.3% 4%; }
-	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7  { padding-left: 0; padding-top: 20px; }	
+	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7  { padding-left: 0; padding-top: 20px; }
 	#blog .col-md-7 { padding-right: 0; }
 	.navbar-nav > li, .navbar-nav li a {
 		min-height: 100px;
 		height: 100px;
 	}
 	.se-pre-con {
-	  position: fixed; 
-	  width: 100%; 
-	  height: 100%; 
+	  position: fixed;
+	  width: 100%;
+	  height: 100%;
 	  top: 0; left: 0; right: 0; bottom: 0;
 	  background: url('../images/robotic-arms.gif') center center no-repeat #12ADE6;
-	  background-size: 768px;  
+	  background-size: 768px;
 	  z-index: 10000;
 	}
 }
@@ -383,28 +383,28 @@ footer .row { height: 100%; }
 	.services_buttons { text-align: left; }
 	.services_buttons .icon-button { font-size: 210%; }
 	.blog_post img { max-width: 100%; }
-	#about .col-md-8 { padding-left: 0; padding-bottom: 20px; }	
+	#about .col-md-8 { padding-left: 0; padding-bottom: 20px; }
 	#about img { padding: 0; margin-top: 20px; margin-bottom: 20px; }
 	#team_content { width: 100%; }
 	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }
 	#services_tabs { padding-left: 10px; }
-	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 20px; padding-left: 0; }	
+	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 20px; padding-left: 0; }
 	.navbar-nav > li, .navbar-nav li a {
 		min-height: 50px;
 		height: 50px;
 	}
 	.se-pre-con {
-	  position: fixed; 
-	  width: 100%; 
-	  height: 100%; 
+	  position: fixed;
+	  width: 100%;
+	  height: 100%;
 	  top: 0; left: 0; right: 0; bottom: 0;
 	  background: url('../images/robotic-arms.gif') center center no-repeat #12ADE6;
-	  background-size: 767px;  
+	  background-size: 767px;
 	  z-index: 10000;
 	}
 }
 
-@media only screen and (max-width: 480px) {	
+@media only screen and (max-width: 480px) {
 	section h1 {	font-size: 1.6em; line-height: 50px; }
 	nav .fa { display: inline; text-align: left; margin-bottom: 0; margin-right: 10px; }
 	.col-xxs { display:block; float:none; width: 100% }
@@ -413,36 +413,36 @@ footer .row { height: 100%; }
     .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 		height: 100%;
 	}
-	.navbar-default .navbar-nav>li>a { padding-top: 15px; padding-bottom: 15px; }	
-	.btn-primary { font-size: 1.2em; }	
+	.navbar-default .navbar-nav>li>a { padding-top: 15px; padding-bottom: 15px; }
+	.btn-primary { font-size: 1.2em; }
 	.services_buttons { text-align: left; }
 	.services_buttons .icon-button { font-size: 190%; }
 	.blog_post { width: 50%;}
-    .blog_post img { max-width: 100%; }    
+    .blog_post img { max-width: 100%; }
 	#about .col-md-8 { padding-left: 0; padding-bottom: 20px; }
 	#about img { padding: 0; margin-top: 20px; margin-bottom: 20px; }
 	#team_content { width: 100%; }
-	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }	
+	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }
 	#services_tabs { padding-left: 0; }
-	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 10px; padding-left: 0; }	
+	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 10px; padding-left: 0; }
 	.navbar-nav > li, .navbar-nav li a {
 		min-height: 50px;
 		height: 50px;
 	}
 	.se-pre-con {
-	  position: fixed; 
-	  width: 100%; 
-	  height: 100%; 
+	  position: fixed;
+	  width: 100%;
+	  height: 100%;
 	  top: 0; left: 0; right: 0; bottom: 0;
 	  background: url('../images/robotic-arms.gif') center center no-repeat #12ADE6;
-	  background-size: 480px;  
+	  background-size: 480px;
 	  z-index: 10000;
 	}
 }
 
 @media only screen and (max-width: 430px) {
 	body { font-size: 10px; }
-	.btn-primary { font-size: 1.1em; }	
+	.btn-primary { font-size: 1.1em; }
 	.blog_post h2 { font-size: 1.1em; padding: 5px 5px; }
 	.services_buttons .icon-button { font-size: 180%; }
 	.navbar-default .navbar-nav>li>a {
@@ -529,8 +529,8 @@ footer .row { height: 100%; }
     height: 0;
     overflow: hidden;
 }
-.responsive-iframe-container iframe,   
-.vresponsive-iframe-container object,  
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
 .vresponsive-iframe-container embed {
     position: absolute;
     top: 0;

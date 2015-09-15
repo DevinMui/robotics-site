@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+  <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en">
+  <![endif]-->
+  <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    <title>Gael Force</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- seo stuff -->
+    <meta name="description" content="Dublin High School websites" />
+    <meta name="author" content="Devin Mui">
+
+    <!-- styles and js -->
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="slider/flexslider.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+
+    <script src="slider/modernizr.js"></script>
+
+</head>
+<body>
+  <!-- loading icon -->
+  <div class="se-pre-con"></div>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="row">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="col-md-2 col-sm-2 col-xs-12">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#home" class="navbar-brand"><!-- prob change to home link-->
+              <img src="images/logo.png" alt="karma"/>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-10 col-sm-10 col-xs-12">
+          <div class="navbar-collapse collapse menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+              <li><a href="index.html#about"><i class="fa fa-user"></i>About Us</a></li>
+              <li><a href="index.html#services"><i class="fa fa-cogs"></i>Teams</a></li>
+              <li><a href="index.html#portfolio"><i class="fa fa-briefcase"></i>Projects</a></li>
+              <li><a href="index.html#blog"><i class="fa fa-pencil"></i>Meetings</a></li>
+              <li><a href="resources.html"><i class="fa fa-pencil"></i>Resources</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" id="home" style="overflow-x:hidden">
+    <section id="about">
+      <div class="outer_container">
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-5 col-sm-12"><h1>Contracts</h1></div>
+            <div class="col col-md-7 col-sm-12 center-row" id="about_content">
+              <div class="row center">
+                <div class="col col-md-8 col-sm-12">
+                  <h2>Forms and stuff</h2>
+                  <p><a href="https://docs.google.com/document/d/1b7sNxBQEfrZc3MtRCrTD_DdR2J7FAJD362t4OlcZB0g/">Contract</a></p>
+                  <p><a href="https://docs.google.com/spreadsheets/d/1QuFBGH2yV5NQ3g1eUg3Yq_Mb_9LaKJ6RVC5ww0g1nSs/">Parental volunteer sign up sheet</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- JavaScripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/jquery.singlePageNav.js"></script>
+  <script src="js/templatemo_custom.js"></script>
+  <script defer src="slider/jquery.flexslider.js"></script>
+  <script src="js/smooth.scrolling.js"></script>
+  <script src="js/jquery.flip.min.js"></script>
+  <script src="js/smooth.min.js"></script>
+  <script type="text/javascript">
+  // might need that
+    $('.blog_post').flip({
+      trigger: 'hover',
+      reverse: true
+    });
+    $(window).load(function() {
+      // Animate loader off screen
+      // idk set the time out so it looks like its loading something
+      // when its really not
+      setTimeout(function(){
+        $(".se-pre-con").fadeOut("slow");
+      }, 500);
+    });
+  </script>
+</body>
+</html>
