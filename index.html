@@ -59,7 +59,7 @@
               <li><a href="#services"><i class="fa fa-cogs"></i>Teams</a></li>
               <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Projects</a></li>
               <li><a href="#blog"><i class="fa fa-pencil"></i>Meetings</a></li>
-              <li><a href="resources.html"><i class="fa fa-pencil"></i>Resources</a></li>
+              <li><a href="resources.html" id="weird-link"><i class="fa fa-pencil"></i>Resources</a></li>
             </ul>
           </div>
         </div>
@@ -441,6 +441,9 @@
       setTimeout(function(){
         $(".se-pre-con").fadeOut("slow");
       }, 2500);
+    });
+    $('#weird-link').click(function(){
+      window.open("resources.html","_self");
     });
   </script>
 </body>
