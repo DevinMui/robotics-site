@@ -117,7 +117,7 @@
           <div class="col col-md-7 col-md-pull-5 col-sm-12 center-row" id="team_content">
             <div class="row center">
               <div class="col col-md-4 col-sm-4 col-xs-4">
-                <img src="images/navneedh.jpg" alt="Nancy" class="img-circle img-responsive">
+                <img src="images/navneedh.jpg" alt="Nancy" class="img-circle img-responsive" id="navneedh">
                 <p>Navneedh Maudgalya</p>
                 <p>President</p>
               </div>
@@ -127,9 +127,9 @@
                 <p>Vice President</p>
               </div>
               <div class="col col-md-4 col-sm-4 col-xs-4">
-                <img src="images/tim.jpg" alt="Tim Degerness" class="img-circle img-responsive">
+                <img id="tim" src="images/tim.jpg" alt="Tim Degerness" class="img-circle img-responsive">
                 <p>Tim Degerness</p>
-                <p>Secretary</p>
+                <p id="tim_cook">Secretary</p>
               </div>
               <div class="col col-md-4 col-sm-4 col-xs-4">
                 <img src="images/justin.jpg" alt="Justin Gau" class="img-circle img-responsive">
@@ -400,6 +400,9 @@
       </div>
     </div>
   </footer>
+  <audio id="rick">
+    <source src="images/image/never-gonna-give-you-up.mp3" type="audio/mpeg" />
+  </audio>
 
   <!-- JavaScripts -->
   <script src="js/jquery.min.js"></script>
@@ -444,6 +447,13 @@
     });
     $('#weird-link').click(function(){
       window.open("resources.html","_self");
+    });
+    $('#navneedh').click(function(){
+      $(this).attr('src', 'images/rick.gif');
+      document.getElementById('rick').play();
+    });
+    $('#tim').click(function(){
+      $('#tim_cook').text('It has can have so much, in so little');
     });
   </script>
 </body>
