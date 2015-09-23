@@ -449,14 +449,33 @@
       window.open("resources.html","_self");
     });
     $('#navneedh').click(function(){
-      $(this).attr('src', 'images/rick.gif');
-      document.getElementById('rick').play();
+      if(!$(this).hasClass('on')){
+        $(this).attr('src', 'images/rick.gif');
+        document.getElementById('rick').play();
+        $(this).addClass('on');
+      } else {
+        $(this).attr('src', 'images/navneedh.jpg');
+        document.getElementById('rick').pause();
+        $(this).removeClass('on');
+      }
     });
     $('#tim').click(function(){
-      $('#tim_cook').text('It has can have so much, in so little');
+      if(!$(this).hasClass('on')){
+        $('#tim_cook').text('It has can have so much, in so little');
+        $(this).addClass('on');
+      } else {
+        $('#tim_cook').text('Secretary');
+        $(this).removeClass('on');
+      }
     });
     $('#justin').click(function(){
-      $(this).attr('src','images/rice.jpg');
+      if(!$(this).hasClass('on')){
+        $(this).attr('src','images/rice.jpg');
+        $(this).addClass('on');
+      } else {
+        $(this).attr('src', 'images/justin.jpg');
+        $(this).removeClass('on');
+      }
     });
   </script>
 </body>
