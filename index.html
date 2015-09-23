@@ -132,7 +132,7 @@
                 <p id="tim_cook">Secretary</p>
               </div>
               <div class="col col-md-4 col-sm-4 col-xs-4">
-                <img src="images/justin.jpg" alt="Justin Gau" class="img-circle img-responsive">
+                <img src="images/justin.jpg" alt="Justin Gau" class="img-circle img-responsive" id="justin">
                 <p>Justin Gau</p>
                 <p>Public Relations Director</p>
               </div>
@@ -454,6 +454,9 @@
     });
     $('#tim').click(function(){
       $('#tim_cook').text('It has can have so much, in so little');
+    });
+    $('#justin').click(function(){
+      $(this).attr('src','images/rice.jpg');
     });
   </script>
 </body>
