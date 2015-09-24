@@ -1,4 +1,23 @@
 <!DOCTYPE html>
+<!--
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄░░░░░░░░░
+░░░░░░░░▄▀░░░░░░░░░░░░▄░░░░░░░▀▄░░░░░░░
+░░░░░░░░█░░▄░░░░▄░░░░░░░░░░░░░░█░░░░░░░
+░░░░░░░░█░░░░░░░░░░░░▄█▄▄░░▄░░░█░▄▄▄░░░
+░▄▄▄▄▄░░█░░░░░░▀░░░░▀█░░▀▄░░░░░█▀▀░██░░
+░██▄▀██▄█░░░▄░░░░░░░██░░░░▀▀▀▀▀░░░░██░░
+░░▀██▄▀██░░░░░░░░▀░██▀░░░░░░░░░░░░░▀██░
+░░░░▀████░▀░░░░▄░░░██░░░▄█░░░░▄░▄█░░██░
+░░░░░░░▀█░░░░▄░░░░░██░░░░▄░░░▄░░▄░░░██░
+░░░░░░░▄█▄░░░░░░░░░░░▀▄░░▀▀▀▀▀▀▀▀░░▄▀░░
+░░░░░░█▀▀█████████▀▀▀▀████████████▀░░░░
+░░░░░░████▀░░███▀░░░░░░▀███░░▀██▀░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+Website created by Devin Mui
+
+-->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
   <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en">
@@ -137,7 +156,7 @@
                 <p>Public Relations Director</p>
               </div>
               <div class="col col-md-4 col-sm-4 col-xs-4">
-                <img src="images/ian.jpg" alt="Ian SooHoo" class="img-circle img-responsive">
+                <img src="images/ian.jpg" alt="Ian SooHoo" class="img-circle img-responsive" id="ian">
                 <p>Ian SooHoo</p>
                 <p>IT/Media Director</p>
               </div>
@@ -476,6 +495,11 @@
         $(this).attr('src', 'images/justin.jpg');
         $(this).removeClass('on');
       }
+    });
+    var items = ['saturate(2)', 'invert(0.2)', 'brightness(2)', 'blur(5px)'];
+    $('#ian').click(function(){
+      var item = items[Math.floor(Math.random()*items.length)];
+      $(this).css('filter',item).css('-webkit-filter', item);
     });
   </script>
 </body>
