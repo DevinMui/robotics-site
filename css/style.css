@@ -119,6 +119,10 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 #about img { padding: 0; }
 #about_content { height: 280px; }
 
+#form h1 { background-color: #498fc0; }
+#form img { padding: 0; }
+#form_content { height: 280px; }
+
 /*------------------------------------------------------
 	Our Team Styles
 --------------------------------------------------------*/
