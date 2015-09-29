@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+
+</head>
+<body>
+	<textarea id="text">Type here...</textarea>
+	<input type="name" id="name" placeholder="Name" />
+	<input type="password" id="password" placeholder="Password"/>
+	<input type="submit" onclick="login()" id="submit"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io//0.9.17/socket.io.js"></script>
+	<script>
+		var socket = io.connect("http://gaelforce.club");
+		function login(){
+			user = document.getElementById('name').value;
+			text = document.getElementById('text').value;
+			password = document.getElementById('password').value;
+			socket.emit('submit', user, password, text);
+			socket.on('verification', function(data){
+				verified = data;
+			});
+		}
+	</script>
+</body>
+</html>
