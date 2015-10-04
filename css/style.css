@@ -2,7 +2,7 @@ html { font-size: 1em; }
 
 html, body { height: 100%; }
 
-body { font-family: "Lato"; overflow-x: hidden; background-color: #EEEEEE; padding-top: 100px; }
+body { font-family: "Lato"; overflow-x: hidden; background-color: #EEEEEE; }
 
 h1, h2, p { font-family: "Lato", sans-serif; }
 
@@ -221,7 +221,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 /*------------------------------------------------------
 	Blog Styles
 --------------------------------------------------------*/
-.blog_post { position: relative; float: left; width: 50%; height: 300px; }
+.blog_post { position: relative; float: left; width: 50%; height: 300px; height: 300px; width: 310px;}
 .blog_posts_container { max-width: 620px; }
 .blog_post h2 { position: absolute; background: #498FC0; color: white; top: 0; right: 0; padding: 10px 20px; margin: 0; text-align: center; }
 

@@ -6,9 +6,11 @@ var MongoClient = require('mongodb').MongoClient,
 	ObjectID = require('mongodb').ObjectID;
 
 var url = 'mongodb://localhost:27017/gaelforce';
-
+app.use("/bootstrap", express.static(__dirname + '/bootstrap'));
+app.use("/js", express.static(__dirname + '/js'));
+app.use("/css", express.static(__dirname + '/css'));
 app.get('/', function(req,res){
-	res.sendFile('/root/slack/file.html');
+	res.sendFile(__dirname + '/file.html');
 });
 
 var server = app.listen(8080);
