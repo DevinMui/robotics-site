@@ -221,7 +221,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 /*------------------------------------------------------
 	Blog Styles
 --------------------------------------------------------*/
-.blog_post { position: relative; float: left; width: 50%; height: 300px; height: 300px; width: 310px;}
+.blog_post { position: relative; float: left; width: 50%; height: 280px; width: 309.5px;}
 .blog_posts_container { max-width: 620px; }
 .blog_post h2 { position: absolute; background: #498FC0; color: white; top: 0; right: 0; padding: 10px 20px; margin: 0; text-align: center; }
 
