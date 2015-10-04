@@ -21,8 +21,8 @@
   .navbar-toggle.collapsed .bottom-bar {
     transform: rotate(0); }
 
-.slides img {
-	width: 1%;
+.slide-img {
+	width: 75%;
 }
 
 html { font-size: 1em; }
@@ -401,6 +401,9 @@ footer .row { height: 100%; }
 	  background-size: 768px;
 	  z-index: 10000;
 	}
+	.slide-img {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 767px) and (min-width: 481px) {
@@ -432,6 +435,9 @@ footer .row { height: 100%; }
 	  background: url('../images/robotic-arms.gif') center center no-repeat #12ADE6;
 	  background-size: 767px;
 	  z-index: 10000;
+	}
+	.slide-img {
+		width: 100%;
 	}
 }
 
@@ -469,6 +475,9 @@ footer .row { height: 100%; }
 	  background-size: 480px;
 	  z-index: 10000;
 	}
+	.slide-img {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 430px) {
@@ -494,6 +503,9 @@ footer .row { height: 100%; }
 @media only screen and (max-width: 418px) {
 	.navbar-brand img {
 		width: 200px;
+	}
+	.slide-img {
+		width: 100%;
 	}
 }
 
