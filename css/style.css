@@ -22,7 +22,7 @@
     transform: rotate(0); }
 
 .slide-img {
-	width: 75%;
+	width: 75% !important;
 }
 
 html { font-size: 1em; }
@@ -402,7 +402,7 @@ footer .row { height: 100%; }
 	  z-index: 10000;
 	}
 	.slide-img {
-		width: 100%;
+		width: 100% !important;
 	}
 }
 
@@ -437,7 +437,7 @@ footer .row { height: 100%; }
 	  z-index: 10000;
 	}
 	.slide-img {
-		width: 100%;
+		width: 100% !important;
 	}
 }
 
@@ -476,7 +476,7 @@ footer .row { height: 100%; }
 	  z-index: 10000;
 	}
 	.slide-img {
-		width: 100%;
+		width: 100% !important;
 	}
 }
 
@@ -505,7 +505,7 @@ footer .row { height: 100%; }
 		width: 200px;
 	}
 	.slide-img {
-		width: 100%;
+		width: 100% !important;
 	}
 }
 
