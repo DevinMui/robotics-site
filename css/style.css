@@ -21,6 +21,10 @@
   .navbar-toggle.collapsed .bottom-bar {
     transform: rotate(0); }
 
+.slides img {
+	width: 1%;
+}
+
 html { font-size: 1em; }
 
 html, body { height: 100%; }
