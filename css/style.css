@@ -21,6 +21,13 @@
   .navbar-toggle.collapsed .bottom-bar {
     transform: rotate(0); }
 
+ul.slides > li {
+	background: #EEEEEE;
+}
+.flexslider {
+	box-shadow: none;
+}
+
 .slide-img {
 	width: 75% !important;
 }
