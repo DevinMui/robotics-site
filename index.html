@@ -154,7 +154,7 @@
                 <p>President</p>
               </div>
               <div class="col col-md-4 col-sm-4 col-xs-4">
-                <img src="images/kana.jpg" alt="Kana Mishra" class="img-circle img-responsive">
+                <img src="images/kana.jpg" alt="Kana Mishra" class="img-circle img-responsive" id="kana">
                 <p>Kana Mishra</p>
                 <p>Vice President</p>
               </div>
@@ -557,6 +557,15 @@ Our team looks into every aspect of the engineering field. We cooperate and work
         $(this).addClass('on');
       } else {
         $(this).attr('src', 'images/justin.jpg');
+        $(this).removeClass('on');
+      }
+    });
+      $('#kana').click(function(){
+      if(!$(this).hasClass('on')){
+        $(this).attr('src','images/kana2.jpg');
+        $(this).addClass('on');
+      } else {
+        $(this).attr('src', 'images/kana.jpg');
         $(this).removeClass('on');
       }
     });
