@@ -9,7 +9,7 @@
 
 	 Website created by Devin Mui, Ian SooHoo, and Billy Zhong.
 
-    Soon to be changed...
+   Whoah there fellow hacker! May the source be with you
 
 -->
 
@@ -48,6 +48,7 @@
 <body>
   <!-- loading icon -->
   <div class="se-pre-con"></div>
+  <div class="se-inverse-con"></div>
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="row">
@@ -395,7 +396,18 @@ Our team looks into every aspect of the engineering field. We cooperate and work
                 </div>
               </div>
             </div>
-            <div class="col col-md-5 col-sm-12"><h1>Resources</h1></div>
+
+            <div class="col col-md-5 col-sm-12">
+              <div class="flip">
+                <div class="front">
+                  <h1>Resources</h1>
+                </div>
+                <div class="back">
+                  <h1 id="nyan_cat">Nyan Cat</h1>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -406,22 +418,21 @@ Our team looks into every aspect of the engineering field. We cooperate and work
         <div class="row">
           <div class="col col-md-5 col-sm-12"><h1>Contact</h1></div>
             <div>
+              <div>
                 <div>
-                    <div>
-                        <section id="email">
-                            <div class="container">
-                                <div class="col col-md-7 col-sm-12 col-xs-12 center-row">
-                            <a name="contract"></a><h2>Club Email</h2>
-                                <p><a href="mailto:gaelforce@dhsrobotics.com?Subject=Robotics Club">gaelforce@dhsrobotics.com</a></p>
+                  <section id="email">
+                    <div class="container">
+                      <div class="col col-md-7 col-sm-12 col-xs-12 center-row">
+                        <a name="contract"></a><h2>Club Email</h2>
+                          <p><a href="mailto:gaelforce@dhsrobotics.com?Subject=Robotics Club">gaelforce@dhsrobotics.com</a></p>
                             <a name="contract"></a><h2>Advisor: Ms. Eugene Chou</h2>
-                                <p><a href="mailto:ms.eugenechou@gmail.com?Subject=Robotics Club">Email Ms. Chou</a></p>
-                                <p>Ms. Chou can be found in K201 or the J204 Hallway</p>
-
+                          <p><a href="mailto:ms.eugenechou@gmail.com?Subject=Robotics Club">Email Ms. Chou</a></p>
+                          <p>Ms. Chou can be found in K201 or the J204 Hallway</p>
+                      </div>
                     </div>
-                  </div>
-               </div>
-            </div>
-            </section>
+                  </section>
+                </div>
+              </div>
 
             <!--
           <div class="col col-md-7 col-sm-12 col-xs-12 center-row" id="contact_content">
@@ -442,11 +453,11 @@ Our team looks into every aspect of the engineering field. We cooperate and work
                 <div class="col-md-12">
                   <div class="form-group">
                     <textarea name="message" rows="3" class="form-control" id="input_message" placeholder="Message..."></textarea><br>
-                    <button type="submit" class="btn btn-primary pull-right">SEND</button>-->
+                    <button type="submit" class="btn btn-primary pull-right">SEND</button>
                   </div>
                 </div>
               </div>
-            </form>
+            </form>-->
           </div>
         </div>
       </div>
@@ -460,7 +471,7 @@ Our team looks into every aspect of the engineering field. We cooperate and work
           <div id="templatemo_copyright">
             Copyright &copy; 2015 <a href="#">Gael Force Robotics</a>
             <br/>
-            Location: <a>Dublin, California</a>
+            Location: <a>Dublin, Cal<span id="invert">i</span>fornia</a>
             <br/>
             Room: P5
           </div>
@@ -481,9 +492,13 @@ Our team looks into every aspect of the engineering field. We cooperate and work
   <audio id="rick" loop>
     <source src="images/image/never-gonna-give-you-up.mp3" type="audio/mpeg" />
   </audio>
+  <audio id="nyan" loop>
+    <source src="images/image/nyan.mp3" type="audio/mpeg"/>
+  </audio>
 
   <!-- JavaScripts -->
   <script src="js/jquery.min.js"></script>
+  <script src="js/rgbcolor.js"></script>
   <script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="js/jquery.singlePageNav.js"></script>
@@ -493,7 +508,7 @@ Our team looks into every aspect of the engineering field. We cooperate and work
   <script src="js/jquery.flip.min.js"></script>
   <script src="js/smooth.min.js"></script>
   <script type="text/javascript">
-
+    $('.se-inverse-con').hide();
     $(window).load(function(){
       $('.flexslider').flexslider({
         animation: "slide",
@@ -503,10 +518,46 @@ Our team looks into every aspect of the engineering field. We cooperate and work
         }
       });
     });
+    $('.flip').flip({
+      trigger: 'hover',
+      reverse: true
+    });
     $("nav.navbar-fixed-top").autoHidingNavbar();
     $('.blog_post').flip({
       trigger: 'hover',
       reverse: true
+    });
+    $('#nyan_cat').click(function(){
+      document.getElementById('nyan').play();
+    });
+    $('#invert').click(function(event) {
+      $('.se-inverse-con').fadeIn("slow");
+      setTimeout(function() {
+        var colorProperties = ['color', 'background-color'];
+
+        $($("*").get().reverse()).each(function() {
+            var color = null;
+
+            for (var prop in colorProperties) {
+                prop = colorProperties[prop];
+
+                //if we can't find this property or it's null, continue
+                if (!$(this).css(prop)) continue; 
+
+                //create RGBColor object
+                color = new RGBColor($(this).css(prop));
+
+                if (color.ok) { 
+                    //good to go, let's build up this RGB baby!
+                    //subtract each color component from 255
+                    $(this).css(prop, 'rgb(' + (255 - color.r) + ', ' + (255 - color.g) + ', ' + (255 - color.b) + ')');
+                }
+                color = null; //some cleanup
+            }
+        });
+        $('.se-inverse-con').fadeOut("slow");
+      }, 5000);
+
     });
     $('#go-top').click(function(event) {
       event.preventDefault();
@@ -522,9 +573,6 @@ Our team looks into every aspect of the engineering field. We cooperate and work
       setTimeout(function(){
         $(".se-pre-con").fadeOut("slow");
       }, 1500);
-    });
-    $('#weird-link').click(function(){
-      window.open("resources.html","_self");
     });
     $('#navneedh').click(function(){
       if(!$(this).hasClass('on')){
