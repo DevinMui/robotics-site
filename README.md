@@ -1,7 +1,7 @@
 # Robotics Site
 
-### Includes information about front and back end
+tfw someone rms every file without telling the lead developer and it screws up the whole local copy forcing him/her to fix every single error and read through a page of the git documentation...
 
-### to ian because i know he's not going to look at the readme:
+tfw you write some code in a file the lead developer is working on and it screws up the whole local copy of the repo forcing him/her to fix a few dozen merge conflicts...
 
-i changed the password to the server. the first letter is now uppercase
+tfw you really dont like easter eggs...
