@@ -529,6 +529,9 @@ Our team looks into every aspect of the engineering field. We cooperate and work
     });
     $('#nyan_cat').click(function(){
       document.getElementById('nyan').play();
+      $('img').each(function () {
+        this.src = this.src = "images/nyan.gif"; 
+      });
     });
     $('#invert').click(function(event) {
       $('.se-inverse-con').fadeIn("slow");
